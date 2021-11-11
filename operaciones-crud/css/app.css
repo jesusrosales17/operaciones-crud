@@ -1,0 +1,152 @@
+*,*::after,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.w-100 {
+  width: 100%;
+}
+.boton {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  font-size: 1.6rem;
+}
+.boton-verde-inline,
+.boton-verde-block{
+  background-color: rgb(20, 159, 6);
+  display: inline-block;
+  transition: background-color .3s ease-out;
+}
+.boton-verde-inline:hover,
+.boton-verde-block:hover{
+  background-color: rgb(21, 116, 35);
+}
+.boton-verde-block {
+  display: block;
+  margin-bottom: 1rem;
+}
+.boton-rojo-block {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(187, 29, 29);
+  transition: background-color .3s ease-out;
+}
+.boton-rojo-block:hover {
+  background-color: rgb(167, 16, 16);
+}
+
+.header,
+.footer{
+  width: 100%;
+  background-color: rgb(38, 37, 37);
+  text-align: center;
+}
+h1 {
+ color: #fff;
+ font-size: 3.5rem;
+ padding: 2rem 0;
+}
+
+/*.................*/
+.main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow: scroll;
+}
+.tabla {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 3rem;
+  border-collapse: collapse;
+  text-align: center;
+  overflow: scroll;
+}
+
+.tabla thead tr{
+  background-color: rgb(20, 159, 6);
+ }
+.tabla th {
+  padding: 1rem .3rem;
+  color: #fff; 
+  font-size: 1.4rem;
+}
+.tabla td {
+  font-size: 1.4rem;
+  padding: 1rem .3rem;
+}
+.tabla tbody tr {
+  border-bottom:1px solid rgba(0,0,0,.2);
+}
+.tabla tbody tr:last-of-type {
+  border-bottom: none;
+}
+
+/*................*/
+.main-formulario {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+.formulario{
+  background-color: #fff;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+.formulario label {
+  font-size: 1.6rem;  
+}
+.formulario input:not(.submit) {
+  display: block;
+  width: 100%;
+  margin:.7rem 0 1.5rem 0;
+  border: 1px solid #e2e2e2;
+  padding: 1rem;
+  border-radius: .5rem;
+  transition: border .3s ease-in-out;
+  font-size: 1.6rem;
+}
+.formulario input::placeholder{
+  font-size: 1.4rem;
+}
+.formulario input:focus {
+  outline: none;
+  border-color: transparent transparent rgb(113, 168, 254) transparent;
+}
+.submit {
+  border: none;
+}
+.alerta {
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+.error {
+  background-color: rgb(184, 42, 42);
+}
+.exito {
+  background-color: rgb(20, 159, 6);
+}
+/*.............*/
+.footer p {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+}
